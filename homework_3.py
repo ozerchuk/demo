@@ -1,2 +1,0 @@
-kss s'fdsf '
-sadfsdg
