@@ -1,36 +1,33 @@
 
 #Task 1
 
-#first case
-country = 'Ukraine'
-check_a = country.isalpha()
-print('\'Ukraine\' is a word ---->' , check_a)
-word = len(country)
-print('Length of word \'', country,'\' consists of', word, 'letters')
 
-
-#second case
-name = input()
-check_b = name.isalpha()
-print('\'',name,'\' is a word ---->',check_b)
+name = input('Enter your name:')
 string = len(name)
 print('Word \'', name,'\' consists of', string, 'letters')
 
 #Task 2
 
-age = int(input('Enter you age:'))
+age = input('Enter you age! it should be a number:')
 
-if age < 7:
-    print('Where is your parents?')
-elif age < 16 and age > 7:
-    print('It is film for adult')
-elif age > 65 and age < 100:
-    print('Show your pension certificate')
-elif age == 7:
-    print('You are lucky')
+if age.isdigit():
+    age_numeric = int(age)
+    if  age_numeric < 1:
+        print('Less than 1')
+    elif age_numeric > 100:
+        print ('More than 100')
+    elif '7' in age:
+        print('You are lucky')
+    elif age_numeric < 7:
+        print('Where is your parents?')
+    elif age_numeric < 16:
+        print('It is film for adult')
+    elif age_numeric > 65:
+        print('Show your pension certificate')
+    else:
+        print('There are no tickets')
 else:
-    print('There are no tickets')
-
+    print('You input is not a number')
 
 
 
