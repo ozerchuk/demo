@@ -27,3 +27,5 @@ if age.isdigit():
         print('There are no tickets')
 else:
     print('You input is not a number')
+
+    test
